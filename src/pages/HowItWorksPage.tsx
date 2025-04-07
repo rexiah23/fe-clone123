@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FileCheck, Truck, Mail, MessageCircle, Car, Plane, ClipboardCheck } from 'lucide-react';
+import { FileCheck, Truck, Mail, MessageCircle, Car, Plane, ClipboardCheck, Shield, DollarSign } from 'lucide-react';
 import { getWhatsAppUrl } from '../utils/getUrls';
 
 export function HowItWorksPage() {
@@ -17,230 +17,189 @@ export function HowItWorksPage() {
         {/* Intro */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-white mb-4">How It Works</h1>
-          {/* <p className="text-xl text-gray-300">
-            A detailed look at our step-by-step process for importing your dream car from South Korea.
-          </p> */}
+          <p className="text-xl text-gray-300">
+            As a licensed VSABC broker, we help you import your dream car from South Korea to Canada.
+          </p>
         </div>
 
         {/* Import Process Summary */}
-       {/* Import Process Summary */}
-      <div className="bg-zinc-900 rounded-xl p-8 border border-green-600/20 mb-12">
-        {/* <h2 className="text-2xl font-bold text-white text-center mb-6">Import Process Summary</h2> */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Step 1: Vehicle Selection */}
-          <div className="bg-black/30 p-6 rounded-lg border border-green-600/10">
-            <div className="flex items-center justify-center mb-4">
-              <div className="w-12 h-12 rounded-full bg-green-600/10 flex items-center justify-center">
-                <Car className="w-6 h-6 text-green-400" />
+        <div className="bg-zinc-900 rounded-xl p-8 border border-green-600/20 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Step 1: Reserve Your Car */}
+            <div className="bg-black/30 p-6 rounded-lg border border-green-600/10">
+              <div className="flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-green-600/10 flex items-center justify-center">
+                  <DollarSign className="w-6 h-6 text-green-400" />
+                </div>
               </div>
+              <h3 className="text-lg font-semibold text-white text-center mb-2">
+                1. Reserve Your Car
+              </h3>
+              <p className="text-gray-300 text-center text-sm">
+                Secure your vehicle with a fully refundable deposit.
+              </p>
             </div>
-            <h3 className="text-lg font-semibold text-white text-center mb-2">
-              1. Vehicle Selection
-            </h3>
-            <p className="text-gray-300 text-center text-sm">
-              Choose a desired car.
-              A refundable deposit secures your choice.
-            </p>
-          </div>
 
-          {/* Step 2: Inspection */}
-          <div className="bg-black/30 p-6 rounded-lg border border-green-600/10">
-            <div className="flex items-center justify-center mb-4">
-              <div className="w-12 h-12 rounded-full bg-green-600/10 flex items-center justify-center">
-                <FileCheck className="w-6 h-6 text-green-400" />
+            {/* Step 2: Vehicle Search */}
+            <div className="bg-black/30 p-6 rounded-lg border border-green-600/10">
+              <div className="flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-green-600/10 flex items-center justify-center">
+                  <FileCheck className="w-6 h-6 text-green-400" />
+                </div>
               </div>
+              <h3 className="text-lg font-semibold text-white text-center mb-2">
+                2. We Inspect the Car
+              </h3>
+              <p className="text-gray-300 text-center text-sm">
+                Our professional mechanic in Korea examines all mechanical and cosmetic details.
+              </p>
             </div>
-            <h3 className="text-lg font-semibold text-white text-center mb-2">
-             2: Inspection
-            </h3>
-            <p className="text-gray-300 text-center text-sm">
-              Our expert mechanic inspects the vehicle.
-              If it meets our strict standards, it's "SG Supercars Approved" and eligible for our 3-day return policy; if not, we may refuse its import.
-            </p>
-          </div>
 
-          {/*3: Documentation & Payment */}
-          <div className="bg-black/30 p-6 rounded-lg border border-green-600/10">
-            <div className="flex items-center justify-center mb-4">
-              <div className="w-12 h-12 rounded-full bg-green-600/10 flex items-center justify-center">
-                <ClipboardCheck className="w-6 h-6 text-green-400" />
+            {/* Step 3: Documentation & Payment */}
+            <div className="bg-black/30 p-6 rounded-lg border border-green-600/10">
+              <div className="flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-green-600/10 flex items-center justify-center">
+                  <DollarSign className="w-6 h-6 text-green-400" />
+                </div>
               </div>
+              <h3 className="text-lg font-semibold text-white text-center mb-2">
+                3. Documentation & Payment
+              </h3>
+              <p className="text-gray-300 text-center text-sm">
+                Complete paperwork and process payment through our secure trust account.
+              </p>
             </div>
-            <h3 className="text-lg font-semibold text-white text-center mb-2">
-             3: Documentation & Payment
-            </h3>
-            <p className="text-gray-300 text-center text-sm">
-              Review and sign documents,
-              then complete the final payment.
-            </p>
-          </div>
 
-          {/*4: Shipping & Customs Clearance */}
-          <div className="bg-black/30 p-6 rounded-lg border border-green-600/10">
-            <div className="flex items-center justify-center mb-4">
-              <div className="w-12 h-12 rounded-full bg-green-600/10 flex items-center justify-center">
-                <Truck className="w-6 h-6 text-green-400" />
+            {/* Step 4: Shipping & Customs Clearance */}
+            <div className="bg-black/30 p-6 rounded-lg border border-green-600/10">
+              <div className="flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-green-600/10 flex items-center justify-center">
+                  <Truck className="w-6 h-6 text-green-400" />
+                </div>
               </div>
+              <h3 className="text-lg font-semibold text-white text-center mb-2">
+                4. Shipping & Customs Clearance
+              </h3>
+              <p className="text-gray-300 text-center text-sm">
+                We manage de-registration, shipping, customs clearance, and delivery to your home or Vancouver pickup.
+              </p>
             </div>
-            <h3 className="text-lg font-semibold text-white text-center mb-2">
-             4: Shipping & Customs Clearance
-            </h3>
-            <p className="text-gray-300 text-center text-sm">
-              We manage de-registration, shipping, customs clearance,
-              and successful import into the Port of Vancouver.
-            </p>
-          </div>
 
-          {/*5: Delivery Options */}
-          <div className="bg-black/30 p-6 rounded-lg border border-green-600/10">
-            <div className="flex items-center justify-center mb-4">
-              <div className="w-12 h-12 rounded-full bg-green-600/10 flex items-center justify-center">
-                <Plane className="w-6 h-6 text-green-400" />
+            {/* Step 5: Get Your Car */}
+            <div className="bg-black/30 p-6 rounded-lg border border-green-600/10">
+              <div className="flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-green-600/10 flex items-center justify-center">
+                  <Car className="w-6 h-6 text-green-400" />
+                </div>
               </div>
+              <h3 className="text-lg font-semibold text-white text-center mb-2">
+                5. Get Your Car
+              </h3>
+              <p className="text-gray-300 text-center text-sm">
+                Choose between Vancouver pickup or home delivery.
+              </p>
             </div>
-            <h3 className="text-lg font-semibold text-white text-center mb-2">
-             5: Get Your Car
-            </h3>
-            <p className="text-gray-300 text-center text-sm">
-              Choose between Vancouver pickup
-              or home delivery.
-            </p>
-          </div>
 
-          {/*6: Registration */}
-          <div className="bg-black/30 p-6 rounded-lg border border-green-600/10">
-            <div className="flex items-center justify-center mb-4">
-              <div className="w-12 h-12 rounded-full bg-green-600/10 flex items-center justify-center">
-                <FileCheck className="w-6 h-6 text-green-400" />
+            {/* Step 6: Registration */}
+            <div className="bg-black/30 p-6 rounded-lg border border-green-600/10">
+              <div className="flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-green-600/10 flex items-center justify-center">
+                  <Shield className="w-6 h-6 text-green-400" />
+                </div>
               </div>
+              <h3 className="text-lg font-semibold text-white text-center mb-2">
+                6. Registration
+              </h3>
+              <p className="text-gray-300 text-center text-sm">
+                Complete local safety inspections
+                and register your vehicle for road use.
+              </p>
             </div>
-            <h3 className="text-lg font-semibold text-white text-center mb-2">
-             6: Registration
-            </h3>
-            <p className="text-gray-300 text-center text-sm">
-              Complete local safety inspections
-              and register your vehicle for road use.
-            </p>
           </div>
         </div>
-      </div>
-
 
         {/* Detailed Steps */}
         <div className="space-y-8">
-          {/* Step 1: Vehicle Selection */}
-          <div className="bg-zinc-900 rounded-xl p-8 border border-green-600/20">
-            <div className="flex items-center gap-3 mb-6">
-              <Car className="w-8 h-8 text-green-400" />
-              <h2 className="text-2xl font-bold text-white">1. Vehicle Selection</h2>
-            </div>
-            <div className="text-gray-300 space-y-4">
-              <p>
-                Begin by choosing the car you'd like to import. If you find one in our curated selection on 
-                <strong> sgsupercars.ca</strong>, simply open its detail page and click <em>"RESERVE NOW".</em> 
-                You'll be prompted to provide a refundable deposit through our secure Stripe payment link.
-              </p>
-              <p>
-                If you've found a car elsewhere—such as on <strong>Encar.com</strong> or another Korean auto marketplace—
-                email the link to <strong>admin@sgsupercars.ca</strong>.
-              </p>
-              <p className="bg-green-600/10 p-4 rounded-lg text-green-400 font-semibold">
-                Note: Your deposit is fully refundable until we actually purchase the vehicle on your behalf. We'll always 
-                obtain your final confirmation before proceeding with the purchase.
-              </p>
-            </div>
-          </div>
-
-          {/* Step 2: Professional Inspection */}
-          <div className="bg-zinc-900 rounded-xl p-8 border border-green-600/20">
-            <div className="flex items-center gap-3 mb-6">
-              <FileCheck className="w-8 h-8 text-green-400" />
-              <h2 className="text-2xl font-bold text-white">2. Professional Inspection</h2>
-            </div>
-            <div className="text-gray-300 space-y-4">
-              <p>
-                After receiving your deposit, we arrange a thorough pre-purchase inspection with our professional mechanic 
-                in Korea. This includes reviewing the vehicle's mechanical systems (engine, transmission, suspension, 
-                and brakes), checking the body and interior condition, and verifying the documentation. Any imperfections 
-                we find—whether cosmetic or mechanical—will be disclosed to you in detail.
-              </p>
-              <p>
-                If the vehicle meets our strict internal standards, we designate it as "SG Supercars Approved." This means it 
-                is eligible for our <strong>3-day return policy</strong>, because we're confident you'll love the car 
-                once you see it in person. 
-              </p>
-              <p className="text-red-400">
-                <strong>Important:</strong> If a car fails to meet our standards, we may refuse to facilitate its import. 
-                Any vehicle not approved by SG Supercars will not be covered by the 3-day return policy.
-              </p>
-            </div>
-          </div>
-
-          {/* Step 3: Documentation & Final Payment */}
+          {/* Step 1: Initial Consultation */}
           <div className="bg-zinc-900 rounded-xl p-8 border border-green-600/20">
             <div className="flex items-center gap-3 mb-6">
               <ClipboardCheck className="w-8 h-8 text-green-400" />
-              <h2 className="text-2xl font-bold text-white">3. Documentation & Final Payment</h2>
+              <h2 className="text-2xl font-bold text-white">1. Initial Consultation & Agreement</h2>
             </div>
             <div className="text-gray-300 space-y-4">
               <p>
-                Once you've reviewed our inspection reports, photos, and videos, if you would like to proceed with importing the 
-                car, we will send the following two documents via DocuSign:
+                We begin by understanding your vehicle requirements and formalizing our relationship through a written brokerage service agreement. This agreement includes:
               </p>
-              <div className="bg-zinc-800 p-4 rounded-lg">
-                <p className="text-white font-semibold mb-2">Purchase Agreement</p>
-                <p>
-                  This contract outlines every aspect of your purchase: final pricing, the 3-day return policy, and 
-                  all included services. We encourage you to review it carefully before signing.
-                </p>
-              </div>
-              <div className="bg-zinc-800 p-4 rounded-lg">
-                <p className="text-white font-semibold mb-2">Power of Attorney</p>
-                <p>
-                  By granting us this legal authorization, we can complete the necessary customs paperwork, import 
-                  formalities, and provide registration assistance on your behalf. It's a standard procedure that ensures 
-                  a smooth process.
-                </p>
-              </div>
-              <p>
-                We'll also share our wire transfer details so you can settle the remaining balance. This final payment 
-                includes the cost of the vehicle, duty, GST, shipping, our service fee, and any additional services requested. Your 
-                deposit is credited toward this total.
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Detailed vehicle specifications and requirements</li>
+                <li>Maximum purchase price and payment terms</li>
+                <li>Our broker fee structure and trust account details</li>
+                <li>Timeline for vehicle procurement</li>
+              </ul>
+              <p className="bg-green-600/10 p-4 rounded-lg text-green-400">
+                A refundable deposit is required to begin the search, which is held in our secure trust account at a BC financial institution.
               </p>
             </div>
           </div>
 
-          {/* Step 4: Purchase & Shipping */}
+          {/* Step 2: Vehicle Search */}
+          <div className="bg-zinc-900 rounded-xl p-8 border border-green-600/20">
+            <div className="flex items-center gap-3 mb-6">
+              <Car className="w-8 h-8 text-green-400" />
+              <h2 className="text-2xl font-bold text-white">2. Vehicle Search & Verification</h2>
+            </div>
+            <div className="text-gray-300 space-y-4">
+              <p>
+                Once we have your requirements, we search the Korean market for vehicles that match your criteria. For each potential match, we:
+              </p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Verify the vehicle's availability and specifications</li>
+                <li>Review available history reports and documentation</li>
+                <li>Obtain detailed photos and condition reports</li>
+                <li>Present you with comprehensive information for decision-making</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Step 3: Documentation */}
+          <div className="bg-zinc-900 rounded-xl p-8 border border-green-600/20">
+            <div className="flex items-center gap-3 mb-6">
+              <FileCheck className="w-8 h-8 text-green-400" />
+              <h2 className="text-2xl font-bold text-white">3. Documentation & Purchase</h2>
+            </div>
+            <div className="text-gray-300 space-y-4">
+              <p>
+                Upon your approval, we facilitate the purchase process:
+              </p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Prepare purchase agreement between you and the seller</li>
+                <li>Process payment through our trust account</li>
+                <li>Handle all necessary export documentation</li>
+                <li>Maintain transparent records of all transactions</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Step 4: Import Process */}
           <div className="bg-zinc-900 rounded-xl p-8 border border-green-600/20">
             <div className="flex items-center gap-3 mb-6">
               <Truck className="w-8 h-8 text-green-400" />
-              <h2 className="text-2xl font-bold text-white">4. Purchase & Shipping</h2>
+              <h2 className="text-2xl font-bold text-white">4. Import Process</h2>
             </div>
             <div className="text-gray-300 space-y-4">
               <p>
-                After final payment is received and all paperwork is in order, we purchase the car on your behalf. If any 
-                modifications are needed to meet Canadian safety requirements, we'll handle those as well. 
+                We manage the entire import process:
               </p>
-              <p>
-                We then prepare the vehicle for export and oversee the entire shipping process from South Korea to Canada.
-                Depending on your preference, the estimated shipping times are:
-              </p>
-              <div className="bg-zinc-800 p-4 rounded-lg">
-                <p className="text-white font-semibold mb-2">RORO Shipping</p>
-                <p>2-3 months.</p>
-              </div>
-              <div className="bg-zinc-800 p-4 rounded-lg">
-                <p className="text-white font-semibold mb-2">Container Shipping</p>
-                <p>1-2 months.</p>
-              </div>
-              <p>
-                Our team will complete customs clearance upon arrival, ensuring all import duties and forms are handled 
-                properly. We'll keep you informed throughout the entire journey.
-              </p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Arrange international shipping and insurance</li>
+                <li>Handle customs clearance at the Port of Vancouver</li>
+                <li>Coordinate required safety modifications</li>
+                <li>Keep you updated throughout the process</li>
+              </ul>
             </div>
           </div>
 
-          {/* Step 5: Delivery Options */}
+          {/* Step 5: Delivery */}
           <div className="bg-zinc-900 rounded-xl p-8 border border-green-600/20">
             <div className="flex items-center gap-3 mb-6">
               <Plane className="w-8 h-8 text-green-400" />
@@ -248,59 +207,48 @@ export function HowItWorksPage() {
             </div>
             <div className="text-gray-300 space-y-4">
               <p>
-                Once the car arrives in Vancouver, you can choose to pick it up in person or have it delivered directly 
-                to your home.
+                Choose your preferred delivery method:
               </p>
-              <div className="bg-zinc-800 p-4 rounded-lg">
-                <p className="text-white font-semibold mb-2">Vancouver Pickup</p>
-                <p>
-                  We'll cover the cost of a round-trip flight if you'd like to collect the car in person. You'll receive 
-                  all paperwork, keys, and guidance on the remaining registration steps.
-                </p>
-              </div>
-              <div className="bg-zinc-800 p-4 rounded-lg">
-                <p className="text-white font-semibold mb-2">Home Delivery</p>
-                <p>
-                  For added convenience, we can arrange an insured, enclosed carrier to transport the vehicle 
-                  directly to your door.
-                </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-black/30 p-4 rounded-lg">
+                  <h3 className="font-semibold text-white mb-2">Vancouver Pickup</h3>
+                  <p>Collect your vehicle in person at our Vancouver location.</p>
+                </div>
+                <div className="bg-black/30 p-4 rounded-lg">
+                  <h3 className="font-semibold text-white mb-2">Home Delivery</h3>
+                  <p>We can arrange enclosed transport to your location.</p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Step 6: Registration & Final Steps */}
+          {/* Step 6: Registration */}
           <div className="bg-zinc-900 rounded-xl p-8 border border-green-600/20">
             <div className="flex items-center gap-3 mb-6">
-              <FileCheck className="w-8 h-8 text-green-400" />
-              <h2 className="text-2xl font-bold text-white">6. Registration & Final Steps</h2>
+              <Shield className="w-8 h-8 text-green-400" />
+              <h2 className="text-2xl font-bold text-white">6. Safety Inspection & Registration</h2>
             </div>
             <div className="text-gray-300 space-y-4">
               <p>
-                With your new import in hand, the final steps focus on meeting your province's registration requirements.
+                The final steps to get your vehicle road-ready:
               </p>
-              <div className="bg-zinc-800 p-4 rounded-lg">
-                <p className="text-white font-semibold mb-2">Out-of-Province Safety Inspection</p>
-                <p>
-                  Visit a local mechanic to complete a provincial out-of-province inspection. This confirms that your 
-                  vehicle meets the necessary safety standards.
-                </p>
-              </div>
-              <div className="bg-zinc-800 p-4 rounded-lg">
-                <p className="text-white font-semibold mb-2">Local Registration</p>
-                <p>
-                  Take the inspection documentation and any paperwork we've provided to your provincial registry. 
-                  Once you've registered the car and received your license plates, you're officially ready to hit the road!
-                </p>
-              </div>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>Complete required safety modifications</li>
+                <li>Provide documentation for safety inspection</li>
+                <li>Guide you through the registration process</li>
+              </ul>
+              <p className="bg-yellow-600/10 p-4 rounded-lg text-yellow-400">
+                Note: Safety inspection and registration must be completed at your chosen licensed facility.
+              </p>
             </div>
           </div>
 
           {/* Contact Section */}
           <div className="bg-zinc-900 rounded-xl p-8 border border-green-600/20">
             <div className="text-center">
-              <h2 className="text-2xl font-bold text-white mb-6">Ready to Get Started?</h2>
+              <h2 className="text-2xl font-bold text-white mb-6">Ready to Import Your Dream Car?</h2>
               <p className="text-gray-300 mb-8">
-                We're here to guide you every step of the way, from your initial inquiry to handing over the keys.
+                Contact us to start your import journey with a licensed VSABC broker.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
